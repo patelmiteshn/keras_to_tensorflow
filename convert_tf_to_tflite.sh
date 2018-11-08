@@ -1,0 +1,9 @@
+toco --graph_def_file=2018_11_06_2d_model.pb \
+  --input_format=TENSORFLOW_GRAPHDEF \
+  --output_format=TFLITE \
+  --output_file=2018_11_06_2d_model.tflite \
+  --inference_type=FLOAT \
+  --input_type=FLOAT \
+  --input_arrays=input_1 \
+  --output_arrays=cls3_fc_pose_xy/BiasAdd,cls3_fc_pose_yaw/BiasAdd \
+  --input_shapes=1,224,224,3
